@@ -1,3 +1,5 @@
+export { Footer } from '../components/footer/Footer';
+
 export { Inicio } from './inicio/Inicio';
 export { Menu } from '../components/navbar/Menu';
 export { Precios } from './precios/Precios';

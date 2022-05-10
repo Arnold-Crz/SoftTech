@@ -1,4 +1,4 @@
-import { Inicio, Menu, Servicios, Precios, Contacto } from './pages';
+import { Inicio, Menu, Servicios, Precios, Contacto, Footer } from './pages';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Servicios />
       <Precios />
       <Contacto />
+      <Footer />
     </>
   );
 }

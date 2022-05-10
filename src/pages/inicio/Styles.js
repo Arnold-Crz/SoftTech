@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { segundoColor, tercerColor } from '../../stylesColorGlobal';
+
+const blancoColor = '#FFFCFC',
+  naranjaColor = '#FC9918',
+  negrodosColor = '#2f2e41',
+  cafeColor = '#403F3F';
 
 const WrapperSection = styled.div`
   width: 100%;
@@ -20,6 +24,7 @@ const WrapperSection = styled.div`
       font-size: 3rem;
       padding: 5px;
       margin-bottom: 20px;
+      color: ${negrodosColor};
     }
 
     & span {
@@ -30,7 +35,8 @@ const WrapperSection = styled.div`
   & p {
     position: relative;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
+    color: ${negrodosColor};
     @media (max-width: 768px) {
       padding: 5px;
       margin-left: 25px;
@@ -60,9 +66,9 @@ const WrapperBtn = styled.a`
   align-items: center;
   width: 115px;
   margin-top: 10px;
-  background: #fc9918;
+  background: ${naranjaColor};
   padding: 10px;
-  color: #fffcfc;
+  color: ${blancoColor};
   border-radius: 5px;
   pointer-events: auto;
   transition: 0.5s ease-in-out;
@@ -73,8 +79,8 @@ const WrapperBtn = styled.a`
   }
 
   &:hover {
-    color: ${segundoColor};
-    background-color: ${tercerColor};
+    color: ${blancoColor};
+    background-color: ${cafeColor};
   }
 
   &:hover i {

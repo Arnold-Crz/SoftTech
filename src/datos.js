@@ -6,6 +6,7 @@ export const allDatos = [
     subtitulo:
       'Si estas por comenzar un emprendimiento y no sabes por donde empezar, empiece por nuestro paquete basico que incluye las herramientas necesarias para tu negocio',
     boton: 'Cotizar Proyecto',
+    link: 'https://api.whatsapp.com/send/?phone=50433038039&text=Hola Buen dia. estoy interes@ en trabajar juntos para la elaboracion del proyecto landing page 🚀',
     beneficios: [
       'Hosting por 12 meses',
 
@@ -37,6 +38,7 @@ export const allDatos = [
     subtitulo:
       'Perfecto para negocios ya establecidos que buscan incluirse en el mundo digital, ya sea para promocionar un producto o brindar un servicio',
     boton: 'Cotizar Proyecto',
+    link: 'https://api.whatsapp.com/send/?phone=50433038039&text=Hola Buen dia. estoy interes@ en trabajar juntos para la elaboracion del proyecto premium 🚀',
     beneficios: [
       'Hosting por 12 meses',
 
@@ -70,6 +72,7 @@ export const allDatos = [
     subtitulo:
       'Si ud es una empresa coorporativa y busca un diseño moderno y un buen rendimiento y le permita llegar a mas clientes y darles una mejor accesibilidad de sus productos o servicios',
     boton: 'Cotizar Proyecto',
+    link: 'https://api.whatsapp.com/send/?phone=50433038039&text=Hola Buen dia. estoy interes@ en trabajar juntos para la elaboracion del proyecto Empresarial 🚀',
     beneficios: [
       'Hosting por 12 meses',
 
@@ -109,6 +112,7 @@ export const allDatos = [
     subtitulo:
       'Si estas en busca de un diseño web para tu tienda online, este es el paquete ideal para ti',
     boton: 'Cotizar Proyecto',
+    link: 'https://api.whatsapp.com/send/?phone=50433038039&text=Hola Buen dia. estoy interes@ en trabajar juntos para la elaboracion del proyecto tienda en linea 🚀',
     beneficios: [
       'Hosting por 12 meses',
 

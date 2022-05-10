@@ -8,12 +8,13 @@ import Instagram from '../../assets/instagram.svg';
 import Whatsapp from '../../assets/whatsapp.svg';
 
 import { WrapperSection } from './styles';
+import Form from '../../components/form/Form';
 
 export function Contacto() {
   return (
     <WrapperSection id="contacto">
       <Title title="C" subtitle="ontacto" />
-      <div>
+      <div className="Wrapper_C">
         <div>
           <h2>Contactos</h2>
           <div>
@@ -40,6 +41,7 @@ export function Contacto() {
           </div>
         </div>
       </div>
+      <Form />
     </WrapperSection>
   );
 }

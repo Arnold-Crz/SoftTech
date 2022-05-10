@@ -10,12 +10,12 @@ export function Precios() {
       <Title title="P" subtitle="lanes" />
 
       <ContenedorCards>
-        {allDatos.map(({ id, titulo, subtitulo, boton, beneficios }) => (
+        {allDatos.map(({ id, titulo, subtitulo, boton, link, beneficios }) => (
           <div key={id}>
             <h2>{titulo}</h2>
             <p>{subtitulo}</p>
             <div>
-              <a href="#">{boton}</a>
+              <a href={link}>{boton}</a>
             </div>
             <ul>
               {beneficios.map((item, index) => (

@@ -17,7 +17,7 @@ export function Inicio() {
           <br />
           Brindandote los mejores servicios para tu negocio
         </p>
-        <WrapperBtn>
+        <WrapperBtn href="#contacto">
           Contacto
           <i>
             <box-icon

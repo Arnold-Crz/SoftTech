@@ -8,12 +8,13 @@ const WrapperSection = styled.section`
   width: 100%;
   min-height: 100vh;
 
-  > div {
+  .Wrapper_C {
     position: relative;
     max-width: 300px;
     width: 50%;
     height: 450px;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: ${naranjaColor};
     > div {
       position: absolute;

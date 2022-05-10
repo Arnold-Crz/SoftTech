@@ -5,10 +5,10 @@ import MenuHamburguesa from './MenuHamburguesa';
 import ScrollSpy from 'react-scrollspy-navigation';
 export function Menu() {
   const listOptions = [
-    { text: 'Inicio', route: 'inicio' },
-    { text: 'Servicios', route: 'servicios' },
-    { text: 'Planes', route: 'planes' },
-    { text: 'Contacto', route: 'contacto' },
+    { text: 'Inicio', route: '#inicio' },
+    { text: 'Servicios', route: '#servicios' },
+    { text: 'Planes', route: '#planes' },
+    { text: 'Contacto', route: '#contacto' },
   ];
 
   const [click, setclick] = useState(false);
@@ -27,7 +27,7 @@ export function Menu() {
               <a
                 key={index}
                 onClick={handleClick}
-                href={`#${route}`}
+                href={route}
                 ref={React.createRef()}
               >
                 {text}
