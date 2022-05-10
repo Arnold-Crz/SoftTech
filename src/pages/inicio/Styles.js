@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { segundoColor, tercerColor } from '../../stylesColorGlobal';
 
-const Contenedor = styled.div`
-  max-width: 100%;
+const WrapperSection = styled.div`
+  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -53,13 +53,13 @@ const Contenedor = styled.div`
   }
 `;
 
-const ContenedorBoton = styled.a`
+const WrapperBtn = styled.a`
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 115px;
-  margin-top: 20px;
+  margin-top: 10px;
   background: #fc9918;
   padding: 10px;
   color: #fffcfc;
@@ -86,4 +86,4 @@ const ContenedorBoton = styled.a`
   }
 `;
 
-export { Contenedor, ContenedorBoton };
+export { WrapperSection, WrapperBtn };

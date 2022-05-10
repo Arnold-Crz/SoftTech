@@ -5,8 +5,9 @@ import {
   tercerColor,
 } from '../../stylesColorGlobal';
 
-const Contenedor = styled.div`
-  background-color: #fff;
+const WrapperSection = styled.section`
+  width: 100%;
+  min-height: 100vh;
 `;
 
 const ContenedorCards = styled.div`
@@ -79,4 +80,4 @@ const ContenedorCards = styled.div`
   }
 `;
 
-export { Contenedor, ContenedorCards };
+export { ContenedorCards, WrapperSection };

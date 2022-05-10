@@ -1,15 +1,13 @@
 import React from 'react';
-import { TitleSection } from '../../stylesColorGlobal';
 import { ContenedorCards, WrapperSection } from './Styles';
 import { allDatos } from '../../datos';
 import 'boxicons';
+import Title from '../../components/Title';
 
 export function Precios() {
   return (
     <WrapperSection id="planes">
-      <TitleSection>
-        P<span>lanes</span>
-      </TitleSection>
+      <Title title="P" subtitle="lanes" />
 
       <ContenedorCards>
         {allDatos.map(({ id, titulo, subtitulo, boton, beneficios }) => (

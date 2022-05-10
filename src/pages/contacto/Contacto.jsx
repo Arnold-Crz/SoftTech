@@ -1,15 +1,45 @@
-import React from 'react';
-import styled from 'styled-components';
-import { TitleSection } from '../../stylesColorGlobal';
+import Title from '../../components/Title';
+
+//SVG
+import Email from '../../assets/email.svg';
+import Tel from '../../assets/phone.svg';
+import Facebook from '../../assets/facebook.svg';
+import Instagram from '../../assets/instagram.svg';
+import Whatsapp from '../../assets/whatsapp.svg';
+
+import { WrapperSection } from './styles';
 
 export function Contacto() {
   return (
-    <section id="contacto">
-      <TitleSection>
-        C<span>ontacto</span>
-      </TitleSection>
-
-      <form></form>
-    </section>
+    <WrapperSection id="contacto">
+      <Title title="C" subtitle="ontacto" />
+      <div>
+        <div>
+          <h2>Contactos</h2>
+          <div>
+            <div>
+              <img src={Email} alt="Email" />
+              <p>codespacehn@gamil.com</p>
+            </div>
+            <div>
+              <img src={Tel} alt="Email" />
+              <p>+504 33028039</p>
+            </div>
+            <div>
+              <img src={Facebook} alt="Email" />
+              <p>@codespacehn</p>
+            </div>
+            <div>
+              <img src={Instagram} alt="Email" />
+              <p>@codespace_hn</p>
+            </div>
+            <div>
+              <img src={Whatsapp} alt="Email" />
+              <p>+504 33028039</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </WrapperSection>
   );
 }
