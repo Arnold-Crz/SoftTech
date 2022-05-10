@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import { primerColor, segundoColor, tercerColor } from '../stylesColorGlobal';
+import {
+  primerColor,
+  segundoColor,
+  tercerColor,
+} from '../../stylesColorGlobal';
 
 const Contenedor = styled.div`
   background-color: #fff;

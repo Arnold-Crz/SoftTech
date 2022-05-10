@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { segundoColor, tercerColor } from '../stylesColorGlobal';
+import { segundoColor, tercerColor } from '../../stylesColorGlobal';
 
 const Contenedor = styled.div`
   max-width: 100%;

@@ -1,4 +1,4 @@
-import { Inicio, Menu, Servicios, Precios, Contacto } from './components';
+import { Inicio, Menu, Servicios, Precios, Contacto } from './pages';
 
 function App() {
   return (

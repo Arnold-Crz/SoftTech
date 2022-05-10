@@ -1,32 +1,32 @@
 import styled from 'styled-components';
-import { primerColor, tercerColor } from '../stylesColorGlobal';
+import { primerColor, tercerColor } from '../../stylesColorGlobal';
 
 const colorMenu = '#FFFCFC';
 const colorMenuTexto = '#2F2E41';
 
 const Navegacion = styled.nav`
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30px;
-  background-color: ${colorMenu};
-  box-shadow: 1px 2px 20px 0px rgba(30, 30, 60, 0.1);
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  width: 80%;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-
-  @media (max-width: 768px) {
+  justify-content: center;
+  > div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: ${colorMenu};
+    width: 80%;
+    border-radius: 15px;
     position: fixed;
-    width: 100%;
-    border-radius: 0px;
-    bottom: 0;
-    top: auto;
-    margin-top: 0;
+    box-shadow: 1px 2px 20px 0px rgba(30, 30, 60, 0.1);
+    z-index: 10;
+
+    @media (max-width: 768px) {
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      border-radius: 0;
+      bottom: 0;
+    }
   }
 
   .ul-center {
@@ -50,27 +50,21 @@ const Navegacion = styled.nav`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100vw;
-      height: 100%;
+      background-color: ${tercerColor};
+      width: 100%;
+      min-height: 100vh;
       gap: 20px;
-      top: -1000px;
+      top: 100px;
+      left: 0px;
       transition: all 0.5s ease;
+      font-size: 2.5rem;
       a {
         color: #fff;
       }
     }
     .ul-center.active {
-      width: 100vw;
-      height: 100vh;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      font-size: 1.8rem;
-      transform: translate(0px, 316px);
-      background-color: ${tercerColor};
+      top: -680px;
+      left: 0px;
     }
   }
 `;
@@ -84,6 +78,9 @@ const Imagenes = styled.img`
 const MenuRight = styled.ul`
   display: flex;
   margin-right: 20px;
+  @media screen, (max-width: 768px) {
+    display: none;
+  }
 
   & li {
     display: flex;

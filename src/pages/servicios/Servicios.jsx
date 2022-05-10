@@ -1,7 +1,7 @@
 import React from 'react';
 import { Contenedor, ContenedorCards } from './Styles';
 import 'boxicons';
-import { Container, TitleSection } from '../stylesColorGlobal';
+import { Container, TitleSection } from '../../stylesColorGlobal';
 
 export function Servicios() {
   return (

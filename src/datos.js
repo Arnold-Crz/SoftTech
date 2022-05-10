@@ -1,6 +1,6 @@
 export const allDatos = [
   {
-    /* Precio 5000 */
+    /* Precio 6000 */
     id: '1',
     titulo: 'Landing Page',
     subtitulo:
@@ -11,9 +11,13 @@ export const allDatos = [
 
       'Dominio Propio',
 
+      'Certificado SSL',
+
       'Diseño UI / UX',
 
-      '5 secciones',
+      'Adaptable móviles',
+
+      '4 secciones',
 
       'Galeria con 7 imagenes',
 
@@ -27,7 +31,7 @@ export const allDatos = [
     ],
   },
   {
-    /* Precio 8000 */
+    /* Precio 8500 */
     id: '2',
     titulo: 'Prémium',
     subtitulo:
@@ -42,9 +46,11 @@ export const allDatos = [
 
       'Diseño UI / UX',
 
-      'Adaptable a dispositivos móviles',
+      'Adaptable móviles | desktop',
 
-      '5 secciones o 4 paginas',
+      '5 secciones',
+
+      '2 paginas',
 
       'Galeria con 20 imagenes',
 
@@ -58,7 +64,7 @@ export const allDatos = [
     ],
   },
   {
-    /* Precio 12,500 */
+    /* Precio 15,500 */
     id: '3',
     titulo: 'Empresarial',
     subtitulo:
@@ -71,11 +77,13 @@ export const allDatos = [
 
       'Certificado SSL',
 
-      'Adaptable a dispositivos móviles',
+      'Adaptable móviles | desktop',
 
       'Diseño UI / UX',
 
-      '7 secciones 0 5 paginas',
+      '7 secciones',
+
+      '4 paginas',
 
       'Gaeria con 30 imagenes',
 
@@ -95,7 +103,7 @@ export const allDatos = [
     ],
   },
   {
-    /* Precio 15,000 */
+    /* Precio 20,000 */
     id: '4',
     titulo: 'E-commerce',
     subtitulo:
@@ -112,7 +120,7 @@ export const allDatos = [
 
       'metodos de pago',
 
-      'Adaptable a dispositivos móviles',
+      'Adaptable móviles | desktop',
 
       'Diseño UI / UX',
 

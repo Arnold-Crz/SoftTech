@@ -1,7 +1,7 @@
 import React from 'react';
 import { Contenedor, ContenedorBoton } from './Styles';
 import 'boxicons';
-import { Container } from '../stylesColorGlobal';
+import { Container } from '../../stylesColorGlobal';
 
 export function Inicio() {
   return (
