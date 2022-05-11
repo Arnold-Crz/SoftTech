@@ -12,7 +12,9 @@ const Wrapperfooter = styled.footer`
   grid-template-columns: 300px;
   justify-content: center;
   align-items: center;
-
+  @media screen and (min-width: 600px) {
+    display: block;
+  }
   h2 {
     margin-top: 20px;
     font-size: 3rem;
@@ -20,17 +22,30 @@ const Wrapperfooter = styled.footer`
     span {
       color: ${naranjaColor};
     }
+    @media screen and (min-width: 600px) {
+      margin-left: 20px;
+    }
   }
   > p {
     font-size: 1.3rem;
     color: ${blancoColor};
     margin-bottom: 20px;
+    @media screen and (min-width: 600px) {
+      margin-left: 20px;
+    }
   }
   .wrapper_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 600px) {
+      width: 100%;
+      display: grid;
+      column-gap: 40px;
+      grid-template-columns: 350px 300px 200px 100px;
+      margin-bottom: 20px;
+    }
 
     .wrapper_item_nosotros {
       margin-top: 20px;
@@ -43,6 +58,10 @@ const Wrapperfooter = styled.footer`
       p {
         font-size: 1rem;
         color: ${blancoColor};
+      }
+      @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-rows: 50px 200px;
       }
     }
 
@@ -57,6 +76,10 @@ const Wrapperfooter = styled.footer`
       li {
         font-size: 1rem;
         color: ${blancoColor};
+      }
+      @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-rows: 50px 200px;
       }
     }
 
@@ -78,6 +101,10 @@ const Wrapperfooter = styled.footer`
           color: ${blancoColor};
         }
       }
+      @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-rows: 50px 200px;
+      }
     }
 
     .wrapper_item_social {
@@ -93,9 +120,13 @@ const Wrapperfooter = styled.footer`
         gap: 20px;
 
         a {
-          width: 10%;
+          width: 20%;
           color: ${blancoColor};
         }
+      }
+      @media screen and (min-width: 600px) {
+        display: grid;
+        grid-template-rows: 50px 200px;
       }
     }
   }

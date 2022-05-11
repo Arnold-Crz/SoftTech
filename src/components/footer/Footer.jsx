@@ -35,12 +35,14 @@ function Footer() {
         <div className="wrapper_item_contacto">
           <h3>Contacto</h3>
           <div>
-            <p>correo</p>
-            <p>arnoldcrzdev@gmail.com</p>
-          </div>
-          <div>
-            <p>Telefono/Whatsapp</p>
-            <p>+504 3303-8039</p>
+            <div>
+              <p>correo</p>
+              <p>arnoldcrzdev@gmail.com</p>
+            </div>
+            <div>
+              <p>Telefono/Whatsapp</p>
+              <p>+504 3303-8039</p>
+            </div>
           </div>
         </div>
         <div className="wrapper_item_social">

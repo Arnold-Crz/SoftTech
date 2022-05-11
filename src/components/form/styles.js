@@ -4,10 +4,11 @@ const blancoColor = '#FFFCFC',
   negrodosColor = '#2f2e41';
 
 const Wrapper = styled.div`
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: ${negrodosColor};
   border-radius: 20px;
+  margin-bottom: 50px;
 
   form {
     width: 100%;
@@ -17,8 +18,8 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    padding: 1rem;
-    margin-bottom: 100px;
+    padding: 2rem;
+    margin-bottom: 20px;
     .input-div {
       width: 100%;
       margin: 5px 0;

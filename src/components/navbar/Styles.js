@@ -76,12 +76,11 @@ const Imagenes = styled.img`
 `;
 
 const MenuRight = styled.ul`
-  display: flex;
-  margin-right: 20px;
-  @media screen, (max-width: 768px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    margin-right: 20px;
   }
-
   & li {
     display: flex;
     align-items: center;

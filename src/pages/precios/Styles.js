@@ -16,7 +16,7 @@ const ContenedorCards = styled.div`
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 30px;
 
   > div {
     border-radius: 15px;
@@ -33,7 +33,11 @@ const ContenedorCards = styled.div`
       z-index: 1;
       margin-top: 10px;
       margin-bottom: 50px;
+      @media screen and (min-width: 600px) {
+        font-size: 1.8rem;
+      }
     }
+
     ::after {
       position: absolute;
       top: 0;
@@ -56,17 +60,19 @@ const ContenedorCards = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+
       a {
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 15px;
         color: ${naranjaColor};
-        width: 50%;
+        width: 150px;
         height: 50px;
-        font-size: 1.1rem;
+        font-size: 1rem;
         background-color: ${negroColor};
         margin-bottom: 20px;
+        padding: 5px;
       }
     }
 

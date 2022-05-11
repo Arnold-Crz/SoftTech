@@ -39,15 +39,21 @@ export function Menu() {
         <div>
           <MenuRight>
             <li>
-              <i className="bx bxl-whatsapp bx-sm"></i>
+              <a href="https://api.whatsapp.com/send/?phone=50433038039&text=Hola Buen dia. estoy interes@ en trabajar juntos en un proyecto.">
+                <i className="bx bxl-whatsapp bx-sm"></i>
+              </a>
             </li>
 
             <li>
-              <i className="bx bxl-facebook bx-sm"></i>
+              <a href="https://www.facebook.com/codespacehn/">
+                <i className="bx bxl-facebook bx-sm"></i>
+              </a>
             </li>
 
             <li>
-              <i className="bx bxl-instagram bx-sm"></i>
+              <a href="https://www.instagram.com/codespace_hn/">
+                <i className="bx bxl-instagram bx-sm"></i>
+              </a>
             </li>
           </MenuRight>
         </div>
