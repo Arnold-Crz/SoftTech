@@ -4,7 +4,6 @@ export const useForm = (initialForm, validationsForm) => {
   const [form, setform] = useState(initialForm);
   const [errorForm, seterrorForm] = useState({});
   const [loading, setloading] = useState(false);
-  //const [response, setResponse] = useState(null);
 
   const urlForm = 'https://formsubmit.co/ajax/arnoldcrzdev@gmail.com';
   const dataform = form;
