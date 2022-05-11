@@ -4,7 +4,7 @@ import { allDatos } from '../../datos';
 import 'boxicons';
 import Title from '../../components/Title';
 
-export function Precios() {
+function Precios() {
   return (
     <WrapperSection id="planes">
       <Title title="P" subtitle="lanes" />
@@ -35,3 +35,5 @@ export function Precios() {
     </WrapperSection>
   );
 }
+
+export default Precios;

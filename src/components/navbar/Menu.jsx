@@ -8,7 +8,7 @@ import ScrollSpy from 'react-scrollspy-navigation';
 
 import Icon from '../../assets/iconicon.svg';
 
-export function Menu() {
+function Menu() {
   const listOptions = [
     { text: 'Inicio', route: '#inicio' },
     { text: 'Servicios', route: '#servicios' },
@@ -68,3 +68,5 @@ export function Menu() {
     </Navegacion>
   );
 }
+
+export default Menu;

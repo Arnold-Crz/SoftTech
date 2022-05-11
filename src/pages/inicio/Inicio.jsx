@@ -3,7 +3,7 @@ import { WrapperSection, WrapperBtn } from './Styles';
 import img from '../../assets/inicioimg.svg';
 import 'boxicons';
 
-export function Inicio() {
+function Inicio() {
   return (
     <WrapperSection id="inicio">
       <div>
@@ -35,3 +35,5 @@ export function Inicio() {
     </WrapperSection>
   );
 }
+
+export default Inicio;

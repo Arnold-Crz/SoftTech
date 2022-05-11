@@ -10,7 +10,7 @@ import Whatsapp from '../../assets/whatsapp.svg';
 import { WrapperSection } from './styles';
 import Form from '../../components/form/Form';
 
-export function Contacto() {
+function Contacto() {
   return (
     <WrapperSection id="contacto">
       <Title title="C" subtitle="ontacto" />
@@ -47,3 +47,5 @@ export function Contacto() {
     </WrapperSection>
   );
 }
+
+export default Contacto;
