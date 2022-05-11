@@ -1,8 +1,13 @@
 import React from 'react';
-import { Navegacion, Imagenes, MenuRight } from './Styles';
 import { useState } from 'react';
+
+import { Navegacion, Imagenes, MenuRight } from './Styles';
 import MenuHamburguesa from './MenuHamburguesa';
+
 import ScrollSpy from 'react-scrollspy-navigation';
+
+import Icon from '../../assets/iconicon.svg';
+
 export function Menu() {
   const listOptions = [
     { text: 'Inicio', route: '#inicio' },
@@ -19,7 +24,7 @@ export function Menu() {
   return (
     <Navegacion>
       <div>
-        <Imagenes src="../public/iconicon.svg" alt="icono" />
+        <Imagenes src={Icon} alt="icono" />
 
         <ul className={`ul-center ${click ? 'active' : ''}`}>
           <ScrollSpy>

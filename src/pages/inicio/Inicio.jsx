@@ -1,5 +1,6 @@
 import React from 'react';
 import { WrapperSection, WrapperBtn } from './Styles';
+import img from '../../assets/inicioimg.svg';
 import 'boxicons';
 
 export function Inicio() {
@@ -30,7 +31,7 @@ export function Inicio() {
         </WrapperBtn>
       </div>
 
-      <img src="../../public/inicioimg.svg" alt="imagendeinicio" />
+      <img src={img} alt="imagendeinicio" />
     </WrapperSection>
   );
 }
