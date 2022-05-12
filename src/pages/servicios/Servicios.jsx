@@ -1,11 +1,13 @@
 import React from 'react';
 import { ContenedorCards, WrapperSection } from './Styles';
-import 'boxicons';
+
 import Title from '../../components/Title';
+import useObserver from '../../hooks/useObserver';
 
 function Servicios() {
+  const refObserver = useObserver();
   return (
-    <WrapperSection id="servicios">
+    <WrapperSection ref={refObserver} id="servicios">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
         <path
           fill="#F2F6F7"

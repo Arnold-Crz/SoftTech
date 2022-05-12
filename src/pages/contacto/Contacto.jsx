@@ -1,6 +1,6 @@
 import Title from '../../components/Title';
+import Form from '../../components/form/Form';
 
-//SVG
 import Email from '../../assets/email.svg';
 import Tel from '../../assets/phone.svg';
 import Facebook from '../../assets/facebook.svg';
@@ -8,11 +8,12 @@ import Instagram from '../../assets/instagram.svg';
 import Whatsapp from '../../assets/whatsapp.svg';
 
 import { WrapperSection } from './styles';
-import Form from '../../components/form/Form';
+import useObserver from '../../hooks/useObserver';
 
 function Contacto() {
+  const refObserver = useObserver();
   return (
-    <WrapperSection id="contacto">
+    <WrapperSection ref={refObserver} id="contacto">
       <Title title="C" subtitle="ontacto" />
       <div className="WrapperContent">
         <div className="Wrapper_C">

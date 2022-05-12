@@ -4,6 +4,7 @@ import Contacto from './pages/contacto/Contacto';
 import Inicio from './pages/inicio/Inicio';
 import Precios from './pages/precios/Precios';
 import Servicios from './pages/servicios/Servicios';
+import 'boxicons';
 
 function App() {
   return (

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { primerColor, tercerColor } from '../../stylesColorGlobal';
 
 const colorMenu = '#FFFCFC';
 const colorMenuTexto = '#2F2E41';
@@ -31,12 +30,10 @@ const Navegacion = styled.nav`
 
   .ul-center {
     display: flex;
-
     a {
       color: ${colorMenuTexto};
       margin-left: 10px;
       font-weight: 600;
-
       &.active {
         color: #fc9918;
       }
@@ -50,7 +47,7 @@ const Navegacion = styled.nav`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: ${tercerColor};
+      background-color: #403f3f;
       width: 100%;
       min-height: 100vh;
       gap: 20px;

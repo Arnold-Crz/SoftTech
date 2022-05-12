@@ -1,11 +1,11 @@
-import React from 'react';
 import { WrapperSection, WrapperBtn } from './Styles';
 import img from '../../assets/inicioimg.svg';
-import 'boxicons';
+import useObserver from '../../hooks/useObserver';
 
 function Inicio() {
+  const refObserver = useObserver();
   return (
-    <WrapperSection id="inicio">
+    <WrapperSection ref={refObserver} id="inicio">
       <div>
         <h1>
           Desarrollo <span>Web</span>

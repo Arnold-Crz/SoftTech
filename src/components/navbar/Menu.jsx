@@ -1,10 +1,7 @@
-import React from 'react';
 import { useState } from 'react';
 
 import { Navegacion, Imagenes, MenuRight } from './Styles';
 import MenuHamburguesa from './MenuHamburguesa';
-
-import ScrollSpy from 'react-scrollspy-navigation';
 
 import Icon from '../../assets/iconicon.svg';
 
@@ -27,18 +24,11 @@ function Menu() {
         <Imagenes src={Icon} alt="icono" />
 
         <ul className={`ul-center ${click ? 'active' : ''}`}>
-          <ScrollSpy>
-            {listOptions.map(({ route, text }, index) => (
-              <a
-                key={index}
-                onClick={handleClick}
-                href={route}
-                ref={React.createRef()}
-              >
-                {text}
-              </a>
-            ))}
-          </ScrollSpy>
+          {listOptions.map(({ route, text }, index) => (
+            <a key={index} onClick={handleClick} href={route}>
+              {text}
+            </a>
+          ))}
         </ul>
 
         <div>

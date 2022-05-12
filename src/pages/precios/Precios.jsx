@@ -1,15 +1,15 @@
 import React from 'react';
-import { ContenedorCards, WrapperSection } from './Styles';
+import { WrapperSection } from './Styles';
 import { allDatos } from '../../datos';
-import 'boxicons';
 import Title from '../../components/Title';
+import useObserver from '../../hooks/useObserver';
 
 function Precios() {
+  const refObserver = useObserver();
   return (
-    <WrapperSection id="planes">
+    <WrapperSection ref={refObserver} id="planes">
       <Title title="P" subtitle="lanes" />
-
-      <ContenedorCards>
+      <div className="ContenedorCards">
         {allDatos.map(({ id, titulo, subtitulo, boton, link, beneficios }) => (
           <div key={id}>
             <h2>{titulo}</h2>
@@ -31,7 +31,7 @@ function Precios() {
             </ul>
           </div>
         ))}
-      </ContenedorCards>
+      </div>
     </WrapperSection>
   );
 }
