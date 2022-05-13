@@ -10,7 +10,6 @@ const useObserver = () => {
         const navElement = document.querySelector(
           `a[href="#${entry.target.id}"]`
         );
-        console.log(entry);
         if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
           if (!navElement.classList.contains('active')) {
             navElement.classList.add('active');
