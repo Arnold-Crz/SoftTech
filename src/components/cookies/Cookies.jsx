@@ -1,6 +1,19 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
+import TagManager from 'react-gtm-module';
+
 import styled from 'styled-components';
 import CookiesImg from '../../assets/cookies.png';
+
+const tagManagerArgs = {
+  gtmId: 'GTM-W5F4NV4',
+  events: {
+    event: 'cookies',
+  },
+};
+
+TagManager.initialize(tagManagerArgs);
 
 function Cookies() {
   const [active, setActive] = useState(false);
@@ -23,11 +36,11 @@ function Cookies() {
           <img src={CookiesImg} alt="Cookies" />
           <h1>Cookies</h1>
           <p>
-            Utilizamos cookies propias y de terceros para mejorar nuestros
-            servicios.
+            Utilizamos cookies para brindarte un mejor servicio mas
+            persolalizado.
           </p>
           <button onClick={handlecookies}>De acuerdo</button>
-          <a href="#">Aviso de cookies</a>
+          <LinkCookies to="/aviso-cookies">Aviso de cookies</LinkCookies>
         </div>
       </Wrapper>
       <Background className={active ? 'active' : ''}></Background>
@@ -82,13 +95,15 @@ const Wrapper = styled.div`
     margin-top: 10px;
     cursor: pointer;
   }
-  a {
-    color: #fc9918;
-    font-size: 1.2rem;
-  }
+
   &.active {
     display: block;
   }
+`;
+
+const LinkCookies = styled(Link)`
+  color: #fc9918;
+  font-size: 1.2rem;
 `;
 
 const Background = styled.div`
